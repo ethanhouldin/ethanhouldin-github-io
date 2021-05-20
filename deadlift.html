@@ -1,70 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-body 
-
-.topnav {
-  overflow: hidden;
-  background-color: #C70039;
-}
-
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #333;
-  color: white;
-}
-
-.topnav a.active {
-  background-color: #333;
-  color: white;
-}
-
-.topnav .icon {
-  display: none;
-}
-
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-</style>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <div>
 	<p>
-		<img src = "barbell.png" height = 400 width = 600 class ="center" >
-	</p>
+		<img src = "bleed.gif" >
+		<img src = "barbell.png" width = 500>
+		<img src = "bleed.gif">
+	</p>	
 </div>
 <div class="topnav" id="navbar">
   <a href="index.html">Home</a>
-  <a href="whytrain.html">Why Train?</a>
+  <a href="whytrain.html" >Why Train?</a>
   <a href="squat.html">Barbell Squat</a>
-  <a href="deadlift.html"class="active">Traditional Deadlift</a>
+  <a href="deadlift.html" class = "active">Traditional Deadlift</a>
   <a href="ohp.html">Overhead Press</a>
+  <a href="gpc.html">Competing</a>
   <a href="javascript:void(0);" class="icon" onclick="clicking()">
     <i class="fa fa-bars"></i>
   </a>

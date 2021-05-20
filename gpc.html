@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<script>
+/* This is a simple function which simply prints the below events when it is called
+it will be called when the button is clicked*/
+function checkEvents() {
+  document.getElementById("demo").innerHTML = "WEDNESDAY 23RD JUNE MIDLANDS QUALIFIER <br/> FRIDAY 25TH JUNE SCOTLAND QUALIFIER <br/> MONDAY 28TH JUNE NORTHERN QUALIFIERS.";
+}
+</script>
+
+<!-- /* Here I have linked the css file to be accessed by my webpage*/ -->
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!-- /* Here I have a script to access a facebook page, provided by the facebook website*/ -->
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v10.0" nonce="DWfBcr5K"></script>
+<div>
+	<p>
+	<!-- /* This is the header of the page, with two gifs and the site logo loaded in*/ -->
+		<img src = "bleed.gif" >
+		<img src = "barbell.png" width = 500>
+		<img src = "bleed.gif">
+	</p>	
+</div>
+<!-- Below I have written the other sections of the navbar, and I have declared that this page is active, which will let it 
+use the active menu button style -->
+<div class="topnav" id="navbar">
+  <a href="index.html">Home</a>
+  <a href="whytrain.html">Why Train?</a>
+  <a href="squat.html">Barbell Squat</a>
+  <a href="deadlift.html">Traditional Deadlift</a>
+  <a href="ohp.html">Overhead Press</a>
+  <a href="gpc.html" class = "active">Competing</a>
+  <a href="javascript:void(0);" class="icon" onclick="clicking()">
+    <i class="fa fa-bars"></i>
+	<!-- this is simple javascript to call the function for clicking a menu button -->
+  </a>
+</div>
+
+<div style="padding-left:16px">
+  <h2>Can I compete in Powerlifting?</h2>
+  <p>Powerlifting is a sport that anyone can join! Due to the nature of its weight classes, gender sections, and age groups, there is a chance for everybody to become competetive in their chosen lift(s).</p>
+  <p>Here at Barbell Benders we recommend that you follow events closely to see if there are any you can compete in. Click the button below to load the nearest events within two months, or alternatively, check the linked Facebook page to see how other events in the future.</p>
+  <p id= "demo"></p>
+  
+  <!-- the button below will load the pre written events in -->
+  <button type = "button" onclick = "checkEvents()">Check Events</button>
+</div>
+<!-- this is the section for the facebook page to be loaded in -->
+<div class="fb-page" text-align=center data-href="https://www.facebook.com/gpcgb" data-tabs="timeline" data-width="1000" data-height="2000" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/gpcgb" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/gpcgb">Gpc-Gb</a></blockquote></div>
+<script>
+<!-- this is our clicking function, it will find which button we have clicked and will load the respective page file -->
+function clicking() {
+  var x = document.getElementById("navbar");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+</html>
